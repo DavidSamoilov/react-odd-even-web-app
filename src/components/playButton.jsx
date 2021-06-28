@@ -1,12 +1,23 @@
-import React from 'react'
-
-const playButton = () => {
+import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button'
+const PlayButton = () => {
+    const [buttonClicked,setButtonClicked] = useState(false)
+    const wasButtonClicked = () => {
+        setButtonClicked(true)
+    }
     return (
-        <div>
-            
-            
-        </div>
+<>
+        <div className="d-grid gap-2">
+        <Button 
+        variant="primary" 
+        size="lg"
+        onClick={wasButtonClicked}
+        >
+          Play
+        </Button>
+      </div>   
+</>
     )
 }
 
-export default playButton
+export default PlayButton
