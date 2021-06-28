@@ -9,6 +9,7 @@ const PlayButton = ({wasButtonClicked}) => {
         variant="primary" 
         size="lg"
         onClick={wasButtonClicked}
+        
         >
           Play
         </Button>

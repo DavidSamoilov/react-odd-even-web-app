@@ -1,19 +1,29 @@
 import React, { useState } from 'react'
 import PlayButton from './components/PlayButton'
+import UserNamesForm from './components/UserNamesForm'
 const App = () => {
   const [buttonClicked,setButtonClicked] = useState(false)
   const wasButtonClicked = () => {
       setButtonClicked(true)
   }
 
+  const [user1Name,setUser1Name] = useState("")
+  const [user2Name,setUser2Name] = useState("")
+
+
   return (
-    <div>
+    <>
         {!buttonClicked ? 
         <PlayButton wasButtonClicked={wasButtonClicked}/>
         :
-        <h2>Display user name inputs</h2>
+        <>
+        <UserNamesForm setUser1Name={setUser1Name} setUser2Name={setUser2Name}/>
+        
+        </>
       }
-    </div>
+
+
+    </>
   )
 }
 
