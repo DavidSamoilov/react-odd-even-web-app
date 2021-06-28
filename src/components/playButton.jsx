@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button'
-const PlayButton = () => {
-    const [buttonClicked,setButtonClicked] = useState(false)
-    const wasButtonClicked = () => {
-        setButtonClicked(true)
-    }
+const PlayButton = ({wasButtonClicked}) => {
+    
     return (
 <>
         <div className="d-grid gap-2">
