@@ -1,6 +1,4 @@
 import React from "react";
-import { Form } from "react-bootstrap";
-import InputGroup from "react-bootstrap/InputGroup";
 
 const InputForm = ({inputSetState, inputName}) => {
   return (

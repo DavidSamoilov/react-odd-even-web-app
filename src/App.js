@@ -2,6 +2,35 @@ import React, { useState } from 'react'
 import PlayButton from './components/PlayButton'
 import UserNamesForm from './components/UserNamesForm'
 const App = () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const [buttonClicked,setButtonClicked] = useState(false)
   const wasButtonClicked = () => {
       setButtonClicked(true)
@@ -18,7 +47,8 @@ const App = () => {
         :
         <>
         <UserNamesForm setUser1Name={setUser1Name} setUser2Name={setUser2Name}/>
-        
+        {user1Name}
+        {user2Name}
         </>
       }
 
