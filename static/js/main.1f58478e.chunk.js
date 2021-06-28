@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-odd-even-web-game"]=this["webpackJsonpreact-odd-even-web-game"]||[]).push([[0],{9:function(e,t,n){"use strict";n.r(t);var c=n(0),r=n.n(c),d=n(3),a=n.n(d),o=n(1),s=function(){return Object(o.jsx)("div",{children:"app"})};a.a.render(Object(o.jsx)(r.a.StrictMode,{children:Object(o.jsx)(s,{})}),document.getElementById("root"))}},[[9,1,2]]]);
+//# sourceMappingURL=main.1f58478e.chunk.js.map
